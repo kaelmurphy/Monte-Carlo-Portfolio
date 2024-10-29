@@ -17,4 +17,6 @@ stocks = [stock + '.AX' for stock in stockList]
 endDate = dt.datetime.now()
 startDate = dt.timedelta(days=300)
 
+meanReturns, covMatrix = get_data(stocks, startDate, endDate)
 
+print(meanReturns)
