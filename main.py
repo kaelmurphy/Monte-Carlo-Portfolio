@@ -18,7 +18,7 @@ stocks = [stock + '.TO' for stock in stockList]
 
 # Define date range
 endDate = dt.datetime.now()
-startDate = endDate - dt.timedelta(days=300)
+startDate = endDate - dt.timedelta(days=10)
 
 # Get mean returns and covariance matrix
 meanReturns, covMatrix = get_data(stocks, startDate, endDate)
